@@ -2,5 +2,10 @@
 require_once "vendor/autoload.php";
 
 use Bubblegum\Candyman\Candyman;
+use Bubblegum\Environment;
+
+define("ROOT_PATH", dirname(__DIR__, 1) . DIRECTORY_SEPARATOR);
+
+Environment::loadIfNotPrevented(ROOT_PATH . '.env');;
 
 Candyman::executeCommand(...array_slice($argv, 1));
