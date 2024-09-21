@@ -13,7 +13,8 @@ class Help extends Command
     {
         foreach (Candyman::getCommands() as $name => $commands) {
             $totalInfo = implode(', ', array_map(function ($command) {return $command->getInfo();}, $commands));
-            Console::message("$name\t\t\t | $totalInfo.");
+            $argsNames = implode(' ',  array_map(function ($arg) {return "{{$arg}}";}, $commands[0]->getArgsNames()));
+            Console::message("$name $argsNames\t\t\t | $totalInfo.");
         }
     }
 }
