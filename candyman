@@ -1,0 +1,6 @@
+<?php
+require_once "vendor/autoload.php";
+
+use Bubblegum\Candyman\Candyman;
+
+Candyman::executeCommand(...array_slice($argv, 1));
