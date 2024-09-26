@@ -26,8 +26,8 @@
             "src/commands.php"
         ],
         "psr-4": {
-            "Bubblegum\\": "src/",
-            "Bubblegum\\Commands\\BubblegumCandyman\\": "src/Commands/"
+            "Bubblegum\\": "src",
+            "Bubblegum\\Commands\\BubblegumCandyman\\": "src.Commands"
         }
     }
 }
