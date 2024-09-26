@@ -1,0 +1,33 @@
+{
+    "name": "bubblegum-php/bubblegum-candyman",
+    "description": "Commands manager module for BUBBLEGUM.",
+    "keywords": [
+        "bubblegum",
+        "bubblegum-candyman",
+        "candyman",
+        "src/Commands"
+    ],
+    "homepage": "https://github.com/bubblegum-php/bubblegum-candyman",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LankryF",
+            "email": "lankrf@gmail.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/bubblegum-php/bubblegum-candyman"
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/commands.php"
+        ],
+        "psr-4": {
+            "Bubblegum\\": "src/",
+            "Bubblegum\\Commands\\BubblegumCandyman\\": "src/Commands/"
+        }
+    }
+}
