@@ -5,7 +5,7 @@
         "bubblegum",
         "bubblegum-candyman",
         "candyman",
-        "src/Commands"
+        "commands"
     ],
     "homepage": "https://github.com/bubblegum-php/bubblegum-candyman",
     "license": "MIT",
